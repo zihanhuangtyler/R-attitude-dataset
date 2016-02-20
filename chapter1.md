@@ -1,29 +1,30 @@
 
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : R attitude dataset
+description : Tyler teaches you how to analyse survey data
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:VideoExercise lang:r xp:50 skills:1
-## Analyze movie ratings
+## Video Exercise
 
 *** =video_link
 //player.vimeo.com/video/154783078
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1
-## A really bad movie
+## Multiple Choice Exercise
 
 Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
 
 *** =instructions
+- These are the instructions
 - Adventure
 - Action
 - Animation
 - Comedy
 
 *** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
+This is the hint. Have a look at the plot. Which color does the point with the lowest rating have?
 
 *** =pre_exercise_code
 ```{r}
@@ -56,19 +57,19 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1
-## More movies
+## This is NormalExercise, not Multiple Choice Exercise
 
 In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
 
 A dataset with a selection of movies, `movie_selection`, is available in the workspace.
 
 *** =instructions
-- Check out the structure of `movie_selection`.
+- This is instructions. Check out the structure of `movie_selection`.
 - Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
 - Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
 
 *** =hint
-- Use `str()` for the first instruction.
+- This is hint. Use `str()` for the first instruction.
 - For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
 - For the plot, use `plot(x = ..., y = ..., col = ...)`. 
 
